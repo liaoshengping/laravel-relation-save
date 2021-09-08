@@ -92,7 +92,7 @@ $this->model->saveRelation($request->all());
 
 ## Other
 
-[Laravel 验证扩展](https://github.com/liaoshengping/laravel-validate-ext)
+[Laravel 验证中文扩展](https://github.com/liaoshengping/laravel-validate-ext)
 
 
 ## Contributing
