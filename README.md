@@ -81,6 +81,9 @@ $this->model->saveRelation($request->all());
 
 [laravel-admin](https://laravel-admin.org/)
 
+[【源码分析】Laravel-admin 关联保存的原理](https://blog.csdn.net/qq_22823581/article/details/120101938)
+
+
 ## Contributing
 
 You can contribute in one of three ways:
