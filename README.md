@@ -84,6 +84,11 @@ $this->model->saveRelation($request->all());
 [【源码分析】Laravel-admin 关联保存的原理](https://blog.csdn.net/qq_22823581/article/details/120101938)
 
 
+## Other
+
+[Laravel 验证扩展](https://github.com/liaoshengping/laravel-validate-ext)
+
+
 ## Contributing
 
 You can contribute in one of three ways:
