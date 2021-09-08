@@ -71,6 +71,8 @@ $this->model->saveRelation($request->all());
 
 适用 创建和更新 ，可参考源码，学习更多小技巧。
 
+[laravel-relation-save](https://github.com/liaoshengping/laravel-relation-save)
+
 ## ✏Reference
 
 [laravel-admin](https://laravel-admin.org/)
