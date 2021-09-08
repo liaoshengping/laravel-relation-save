@@ -2,12 +2,16 @@
 
 <p align="center"> 📦laravel 关联保存 hasOne hasMany belongsto.</p>
 
+## github
+
+[https://github.com/liaoshengping/laravel-relation-save](https://github.com/liaoshengping/laravel-relation-save)
 
 ## Installing
 
 ```shell
 $ composer require liaosp/laravel-relation-save -vvv
 ```
+
 
 ## ✈Usage
 
