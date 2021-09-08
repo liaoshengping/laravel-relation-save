@@ -1,0 +1,24 @@
+{
+    "name": "liaosp/laravel-relation-save",
+    "description": "laravel 关联保存 hasOne hasMany belongsto",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "liaosp",
+            "email": "1194008361@qq.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Liaosp\\LaravelRelationSave\\": "src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Liaosp\\LaravelRelationSave\\LaravelRelationSaveProvider"
+            ]
+        }
+    }
+}
