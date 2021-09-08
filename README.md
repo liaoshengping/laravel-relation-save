@@ -2,6 +2,12 @@
 
 <p align="center"> 📦laravel 关联保存 hasOne hasMany belongsto.</p>
 
+[![Latest Stable Version](https://poser.pugx.org/liaosp/laravel-relation-save/v/stable)](https://packagist.org/packages/liaosp/laravel-validate-ext)
+[![Total Downloads](https://poser.pugx.org/liaosp/laravel-relation-save/downloads)](https://packagist.org/packages/liaosp/laravel-validate-ext)
+[![Daily Downloads](https://poser.pugx.org/liaosp/laravel-relation-save/d/daily)](https://packagist.org/packages/liaosp/laravel-validate-ext)
+[![License](https://poser.pugx.org/liaosp/laravel-relation-save/license)](https://packagist.org/packages/liaosp/laravel-validate-ext)
+[![StyleCI](https://styleci.io/repos/53163405/shield)](https://styleci.io/repos/53163405/)
+
 ## github
 
 [https://github.com/liaoshengping/laravel-relation-save](https://github.com/liaoshengping/laravel-relation-save)
