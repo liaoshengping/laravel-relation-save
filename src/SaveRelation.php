@@ -83,12 +83,23 @@ trait SaveRelation
                         }
 
                         Arr::forget($related, '__remove__');
-
+                        $arrarr = [];
                         foreach ($related as $colum => $value) {
+                            if (is_array($value)){
+                                if (!method_exists($child, $colum)) {
+                                    continue;
+                                }
+                                $arrarr[][$colum] = $value;
+                                continue;
+                            }
                             $child->setAttribute($colum, $value);
                         }
-
                         $child->save();
+                        if ($arrarr){
+                            foreach ($arrarr as $childchild){
+                                $child->saveRelation($childchild);
+                            }
+                        }
                     }
                     break;
             }
