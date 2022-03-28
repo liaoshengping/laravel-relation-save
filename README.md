@@ -79,6 +79,12 @@ $this->model->save($request->all());
 $this->model->saveRelation($request->all());
 ```
 
+## 更新日志
+
+```
+2022年3月27日10:21:21  多对多无限级保存
+```
+
 适用 创建和更新 ，可参考源码，学习更多小技巧。
 
 [laravel-relation-save](https://github.com/liaoshengping/laravel-relation-save)

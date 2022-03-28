@@ -45,9 +45,10 @@ trait SaveRelation
                 case $relation instanceof\Illuminate\Database\Eloquent\Relations\MorphOne:
                     $related = $this->getRelationValue($name) ?: $relation->getRelated();
 
-                    foreach ($relationsData[$name] as $column => $value) {
-                        $related->setAttribute($column, $value);
-                    }
+//                    foreach ($relationsData[$name] as $column => $value) {
+//                        $related->setAttribute($column, $value);
+//                    }
+                    $related->fill($relationsData[$name]);
 
                     // save child
                     $relation->save($related);
@@ -86,20 +87,25 @@ trait SaveRelation
                         $arrarr = [];
                         foreach ($related as $colum => $value) {
                             if (is_array($value)){
-                                if (!method_exists($child, $colum)) {
+                                if (method_exists($child, $colum)) {
+                                    $arrarr[][$colum] = $value;
                                     continue;
                                 }
-                                $arrarr[][$colum] = $value;
                                 continue;
                             }
-                            $child->setAttribute($colum, $value);
+//                            $child->setAttribute($colum, $value);
                         }
+                        $child->fill($related);
+
+
                         $child->save();
+
                         if ($arrarr){
                             foreach ($arrarr as $childchild){
                                 $child->saveRelation($childchild);
                             }
                         }
+
                     }
                     break;
             }
