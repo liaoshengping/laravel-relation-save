@@ -57,9 +57,10 @@ trait SaveRelation
                 case $relation instanceof\Illuminate\Database\Eloquent\Relations\MorphTo:
                     $related = $this->getRelationValue($name) ?: $relation->getRelated();
 
-                    foreach ($relationsData[$name] as $column => $value) {
-                        $related->setAttribute($column, $value);
-                    }
+//                    foreach ($relationsData[$name] as $column => $value) {
+//                        $related->setAttribute($column, $value);
+//                    }
+                    $related->fill($relationsData[$name]);
 
                     // save parent
                     $related->save();
