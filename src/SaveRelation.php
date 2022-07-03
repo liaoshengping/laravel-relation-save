@@ -48,6 +48,9 @@ trait SaveRelation
 //                    foreach ($relationsData[$name] as $column => $value) {
 //                        $related->setAttribute($column, $value);
 //                    }
+                    if (!is_array($relationsData[$name])) {
+                        break;
+                    }
                     $related->fill($relationsData[$name]);
 
                     // save child
